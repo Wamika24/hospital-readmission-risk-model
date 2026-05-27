@@ -53,52 +53,28 @@ Hospitals lose millions annually to preventable readmissions — and face CMS pe
 ## Repository Structure
 
 ```
-hospital-readmission-model/
+hospital-readmission-risk-model/
 │
-├── README.md                        ← This file
-├── MODEL_CARD.md                    ← Full model documentation
-├── ASSUMPTIONS_REGISTER.md          ← Every financial assumption with citations
-├── FAIRNESS_REMEDIATION.md          ← Fairness audit results and actions
+├── README.md
+├── MODEL_CARD.md
+├── ASSUMPTIONS_REGISTER.md
+├── FAIRNESS_REMEDIATION.md
 │
-├── sql/
-│   ├── 01_create_raw_table.sql
-│   ├── 02_create_clean_table.sql
-│   ├── 03_create_dim_tables.sql
-│   ├── 04_create_fact_risk_table.sql
-│   └── 05_exploratory_queries.sql
+├── sql/                          ← SQL scripts for data pipeline
 │
-├── python/
-│   ├── 03_ml_rebuild_real.py        ← Main CatBoost training script
-│   ├── 04_shap_explainability.py    ← SHAP feature importance
-│   ├── 05_calibration_analysis.py   ← AUC, Brier score, calibration
-│   ├── 05b_apply_calibration.py     ← Isotonic regression fix
-│   ├── 08_fairness_audit.py         ← Race, gender, age fairness
-│   ├── 09_intervention_simulation.py ← ROI scenarios
-│   ├── 10_temporal_validation.py    ← Temporal stability
-│   └── 13_business_case_sensitivity.py ← Sensitivity analysis
+├── 03_ml_rebuild_real.py         ← Main CatBoost training script
+├── 04_shap_explainability.py     ← SHAP feature importance
+├── 05_calibration_analysis.py    ← Calibration metrics
+├── 05b_apply_calibration.py      ← Isotonic regression fix
+├── 08_fairness_audit.py          ← Demographic fairness
+├── 09_intervention_simulation.py ← ROI scenarios
+├── 10_temporal_validation.py     ← Temporal stability
+├── 13_business_case_sensitivity.py ← Sensitivity analysis
 │
-├── outputs/
-│   ├── shap_beeswarm.png
-│   ├── shap_global_importance.png
-│   ├── shap_individual_patient.png
-│   ├── calibration_curve_fixed.png
-│   ├── roc_curve.png
-│   ├── fairness_audit.png
-│   ├── temporal_validation.png
-│   ├── intervention_simulation.png
-│   ├── business_case_sensitivity.png
-│   ├── shap_feature_importance.csv
-│   ├── fact_patient_risk.csv
-│   ├── fairness_audit_results.csv
-│   ├── temporal_validation_results.csv
-│   ├── intervention_scenarios.csv
-│   └── precision_at_k_curve.csv
+├── HOSPITAL READMISSION DASHBOARD.pbix
+├── readmission_workbook_hospital.xlsx
 │
-├── dashboard/
-│   └── HOSPITAL_READMISSION_DASHBOARD.pbix
-│
-└── excel/
-    └── readmission_workbook_FIXED.xlsx
+└── [output files: PNGs and CSVs in root]
 ```
 
 ---
