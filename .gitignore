@@ -1,0 +1,24 @@
+# Large model files
+*.cbm
+*.pkl
+
+# Data files too large for GitHub
+diabetic_data.csv
+X_test.csv
+y_test.csv
+fact_patient_risk.csv
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Database
+*.sql.bak
+
+# WPS/Excel temp files
+~$*.xlsx
+~$*.xls
+
+# Environment
+.env
