@@ -284,3 +284,4 @@ Built as a healthcare analytics portfolio project demonstrating end-to-end ML pi
 
 **Verified:** 2026-05-28
 **Scripts:** 03_ml_rebuild_real.py → 13_business_case_sensitivity.py
+"# hospital-readmission-risk-model" 
