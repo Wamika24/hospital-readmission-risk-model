@@ -247,6 +247,17 @@ AUC range: 0.026 — below 3pp stability threshold. Model is temporally stable w
 | 5 — Financial Impact & ROI | 3-scenario savings, precision@K curve, sensitivity analysis |
 | 6 — Fairness & Validation | FNR by race/gender, AUC temporal stability, calibration curve |
 
+## Dashboard Screenshots
+
+### Executive Dashboard
+![Executive Dashboard](screenshot_executive_dashboard.png)
+
+### Model Explainability — SHAP
+![Model Explainability](screenshot_model_explainability.png)
+
+### Financial Impact & ROI
+![Financial ROI](screenshot_financial_roi.png)
+
 ---
 
 ## Limitations
